@@ -50,7 +50,7 @@ export default function PokemonsWithAdd() {
         style={styles.list}
         data={pokemons}
         renderItem={({ item, index }) => (
-          <Pokemon name={item.name} image={item.image} index={index} />
+          <Pokemon key={item.name} name={item.name} image={item.image} index={index} />
         )}
         keyExtractor={(item) => item.name}
       />
